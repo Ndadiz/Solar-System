@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Solar System: Document Object Model:30 Days Of JavaScript</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<style>
+		body{
+			background-image: url(./images/galaxy.gif);
+			font-family: Montserrat;
+		}
+		header{
+			text-align: center;
+		}
+		h1{
+			color: white;
+			font-size: 30px;
+			font-weight: 500;
+			text-shadow: 2px 2px 0 blue;
+			margin-bottom: 100px;
+		}
+		input{
+			font-family: Montserrat;
+			width: 250px;
+			height: 30px;
+		}
+		select{
+			font-family: Montserrat;
+			width: 200px;
+			height: 35px;
+		}
+		button{
+			font-family: Montserrat;
+			font-size: 15px;
+			font-weight: 400;
+			width: 200px;
+			height: 35px;
+			color: white;
+			background-color: rgb(156, 154, 154);
+			border: none;
+			border-radius: 5px; 
+		}
+		input, select, button{
+			margin-right: 10px;
+		}
+		.flex-container{
+			margin: auto;
+    		width: 891px;
+			padding: 25px 25px;
+			background-color: rgba(97, 97, 97, 0.5);
+			margin-top: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50px;
+		}
+		.flex-item{
+			padding: 25px;
+			display: flex;
+			align-items: center;
+		}
+		.description{
+			display: none;
+			flex-direction: column;
+			justify-content: center;
+			background-color: rgb(79 77 77 / 50%);
+			height: 250px;
+			border-radius: 25px;
+
+		}
+		main{
+			padding:0 15%;
+		}
+		.descr-text{
+			text-shadow: 2px 2px black;
+		}
+		.mass-number{
+			text-shadow:2px 2px 0 blue;
+		}
+		img{
+			width: 323px;
+			height: 323px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Calculate a weight of an object on a planet</h1>
+
+		<input type="number" id="mass" placeholder="Mass in Kilogram" />
+		<select>
+			<option value='none'>--select planet--</option>
+			<option value='MERCURY'>MERCURY</option>
+			<option value='VENUS'>VENUS</option>
+			<option value='EARTH'>EARTH</option>
+			<option value='MOON'>MOON</option>
+			<option value='MARS'>MARS</option>
+			<option value='JUPITER'>JUPITER</option>
+			<option value='SATURN'>SATURN</option>
+			<option value='URANUS'>URANUS</option>
+			<option value='NEPTUNE'>NEPTUNE</option>
+			<option value='PLUTO'>PLUTO</option>
+		</select>
+		<button>Calculate weight</button>
+
+	</header>
+	<main>
+		<div class="flex-container">
+			<div class="flex-item image">
+				<img src='./images/earth.png' class="planet-image" />
+			</div>
+			<div class="flex-item description"></div>
+
+		</div>
+
+
+	</main>
+
+
+
+
+
+	<script src="main.js"></script>
+</body>
+
+</html>
